@@ -185,8 +185,11 @@ function Index() {
                 rd_affiliate: "affiliate",
                 rd_franchise: "franchise",
                 rd_admin: "admin",
+                rd_pro: "admin",
                 developer_dashboard: "developer",
                 influencer_dashboard: "influencer",
+                developer_management: "dev-manager",
+                promise_tracker_manager: "promise-tracker",
               };
               const dashRole = ROLE_DASHBOARD_ROUTES[roleId];
               if (dashRole) {
@@ -213,7 +216,45 @@ function Index() {
                 void navigate({ to: "/franchise-manager" });
                 return;
               }
+              if (roleId === "seo_manager") {
+                void navigate({ to: "/seo-manager" });
+                return;
+              }
+              if (roleId === "home") {
+                void navigate({ to: "/" });
+                return;
+              }
 
+              // ===== EVERY REMAINING MANAGER → generic working console =====
+              const GENERIC_MANAGER_ROUTES: Partial<Record<RoleId, string>> = {
+                ceo: "ceo",
+                vala_ai_management: "vala-ai",
+                server_manager: "server-manager",
+                api_ai_manager: "api-ai-manager",
+                product_manager: "product-manager",
+                demo_manager: "demo-manager",
+                task_management: "task-manager",
+                assist_manager: "assist-manager",
+                ams_manager: "ams-manager",
+                marketing_management: "marketing-manager",
+                lead_manager: "lead-manager",
+                sales_support_manager: "sales-support",
+                customer_support_management: "customer-support",
+                continent_super_admin: "continent-admin",
+                country_head: "country-head",
+                finance_manager: "finance-manager",
+                legal_manager: "legal-manager",
+                pro_manager: "pro-manager",
+                pro_user_dashboard: "pro-user",
+                basic_user_dashboard: "basic-user",
+                security: "security",
+                settings: "settings",
+              };
+              const slug = GENERIC_MANAGER_ROUTES[roleId];
+              if (slug) {
+                void navigate({ to: "/manager/$slug", params: { slug } });
+                return;
+              }
 
               toast.success(`Switched to ${roleId.replace(/_/g, " ")}`);
             }}

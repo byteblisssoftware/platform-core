@@ -21,6 +21,7 @@ import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as ApplyIndexRouteImport } from './routes/apply.index'
 import { Route as ApplyRoleRouteImport } from './routes/apply.$role'
 import { Route as DashboardRoleRouteImport } from './routes/dashboard.$role'
+import { Route as ManagerSlugRouteImport } from './routes/manager.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -82,6 +83,11 @@ const DashboardRoleRoute = DashboardRoleRouteImport.update({
   path: '/dashboard/$role',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ManagerSlugRoute = ManagerSlugRouteImport.update({
+  id: '/manager/$slug',
+  path: '/manager/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -95,6 +101,7 @@ export interface FileRoutesByFullPath {
   '/api/chat': typeof ApiChatRoute
   '/apply/$role': typeof ApplyRoleRoute
   '/dashboard/$role': typeof DashboardRoleRoute
+  '/manager/$slug': typeof ManagerSlugRoute
   '/apply/': typeof ApplyIndexRoute
 }
 export interface FileRoutesByTo {
@@ -109,6 +116,7 @@ export interface FileRoutesByTo {
   '/api/chat': typeof ApiChatRoute
   '/apply/$role': typeof ApplyRoleRoute
   '/dashboard/$role': typeof DashboardRoleRoute
+  '/manager/$slug': typeof ManagerSlugRoute
   '/apply': typeof ApplyIndexRoute
 }
 export interface FileRoutesById {
@@ -124,6 +132,7 @@ export interface FileRoutesById {
   '/api/chat': typeof ApiChatRoute
   '/apply/$role': typeof ApplyRoleRoute
   '/dashboard/$role': typeof DashboardRoleRoute
+  '/manager/$slug': typeof ManagerSlugRoute
   '/apply/': typeof ApplyIndexRoute
 }
 export interface FileRouteTypes {
@@ -140,6 +149,7 @@ export interface FileRouteTypes {
     | '/api/chat'
     | '/apply/$role'
     | '/dashboard/$role'
+    | '/manager/$slug'
     | '/apply/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -154,6 +164,7 @@ export interface FileRouteTypes {
     | '/api/chat'
     | '/apply/$role'
     | '/dashboard/$role'
+    | '/manager/$slug'
     | '/apply'
   id:
     | '__root__'
@@ -168,6 +179,7 @@ export interface FileRouteTypes {
     | '/api/chat'
     | '/apply/$role'
     | '/dashboard/$role'
+    | '/manager/$slug'
     | '/apply/'
   fileRoutesById: FileRoutesById
 }
@@ -183,6 +195,7 @@ export interface RootRouteChildren {
   ApiChatRoute: typeof ApiChatRoute
   ApplyRoleRoute: typeof ApplyRoleRoute
   DashboardRoleRoute: typeof DashboardRoleRoute
+  ManagerSlugRoute: typeof ManagerSlugRoute
   ApplyIndexRoute: typeof ApplyIndexRoute
 }
 
@@ -272,6 +285,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DashboardRoleRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/manager/$slug': {
+      id: '/manager/$slug'
+      path: '/manager/$slug'
+      fullPath: '/manager/$slug'
+      preLoaderRoute: typeof ManagerSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -287,6 +307,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiChatRoute: ApiChatRoute,
   ApplyRoleRoute: ApplyRoleRoute,
   DashboardRoleRoute: DashboardRoleRoute,
+  ManagerSlugRoute: ManagerSlugRoute,
   ApplyIndexRoute: ApplyIndexRoute,
 }
 export const routeTree = rootRouteImport
