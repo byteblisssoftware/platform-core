@@ -24,8 +24,9 @@ function SidebarBase({ role, activeModule, onSelectModule }: Props) {
   const isReseller = role.key === "reseller";
 
   return (
-    <aside className="hidden lg:flex w-64 shrink-0 flex-col bg-sidebar text-sidebar-foreground border-r border-border">
-      <div className="px-5 pt-5 pb-4 border-b border-border">
+    <aside className="sv-rail hidden lg:flex w-64 shrink-0 flex-col text-sidebar-foreground">
+      <div className="px-5 pt-5 pb-4 border-b border-[oklch(0.8_0.12_265_/_0.22)]">
+
         <div className="flex items-center gap-3">
           <span className="logo-3d h-11 w-11 shrink-0 block">
             <img
