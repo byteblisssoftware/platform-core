@@ -154,7 +154,7 @@ export const MANAGER_BLUEPRINTS: Record<string, ManagerBlueprint> = {
     "Pipeline, qualification, follow-ups and conversion.", "lead", [
     group("Pipeline", [
       ["Leads", Target], ["Qualification", ClipboardCheck], ["Follow-ups", Timer],
-      ["Deals", Handshakeish], ["Sources", Globe2], ["Conversion", Percent],
+      ["Deals", Receipt], ["Sources", Globe2], ["Conversion", Percent],
     ]),
   ]),
 
