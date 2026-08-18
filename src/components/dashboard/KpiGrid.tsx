@@ -22,11 +22,12 @@ function KpiCardBase({
   return (
     <button
       onClick={() => onOpen?.(kpi.key)}
-      className={`group text-left rounded-2xl bg-card border border-border p-4 depth-3d sheen-3d ${t.ring}`}
+      className="group relative text-left sv-kpi sheen-3d p-4"
     >
+      <span className="sv-kpi-top" aria-hidden="true" />
       <div className="flex items-start justify-between">
         <div
-          className={`grid h-9 w-9 place-items-center rounded-xl ${t.bg} emboss-3d transition-transform duration-300 group-hover:scale-110`}
+          className={`grid h-9 w-9 place-items-center rounded-xl ${t.bg} emboss-3d transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3`}
         >
           <kpi.icon className={`h-4 w-4 ${t.fg}`} />
         </div>
@@ -34,6 +35,7 @@ function KpiCardBase({
           <MoreVertical className="h-3.5 w-3.5" />
         </span>
       </div>
+
       <div className="mt-3 flex items-baseline gap-1">
         <span className="text-2xl font-black tracking-tight text-foreground">{fmtValue(m.value, m.unit)}</span>
       </div>
