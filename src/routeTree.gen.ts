@@ -10,33 +10,180 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ControlPanelRouteImport } from './routes/control-panel'
+import { Route as CreatorManagerRouteImport } from './routes/creator-manager'
+import { Route as FranchiseManagerRouteImport } from './routes/franchise-manager'
+import { Route as InfluencerManagerRouteImport } from './routes/influencer-manager'
+import { Route as MarketplaceManagerRouteImport } from './routes/marketplace-manager'
+import { Route as ResellerManagerRouteImport } from './routes/reseller-manager'
+import { Route as SeoManagerRouteImport } from './routes/seo-manager'
+import { Route as ApiChatRouteImport } from './routes/api/chat'
+import { Route as ApplyIndexRouteImport } from './routes/apply.index'
+import { Route as ApplyRoleRouteImport } from './routes/apply.$role'
+import { Route as DashboardRoleRouteImport } from './routes/dashboard.$role'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ControlPanelRoute = ControlPanelRouteImport.update({
+  id: '/control-panel',
+  path: '/control-panel',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CreatorManagerRoute = CreatorManagerRouteImport.update({
+  id: '/creator-manager',
+  path: '/creator-manager',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FranchiseManagerRoute = FranchiseManagerRouteImport.update({
+  id: '/franchise-manager',
+  path: '/franchise-manager',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InfluencerManagerRoute = InfluencerManagerRouteImport.update({
+  id: '/influencer-manager',
+  path: '/influencer-manager',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MarketplaceManagerRoute = MarketplaceManagerRouteImport.update({
+  id: '/marketplace-manager',
+  path: '/marketplace-manager',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResellerManagerRoute = ResellerManagerRouteImport.update({
+  id: '/reseller-manager',
+  path: '/reseller-manager',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SeoManagerRoute = SeoManagerRouteImport.update({
+  id: '/seo-manager',
+  path: '/seo-manager',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiChatRoute = ApiChatRouteImport.update({
+  id: '/api/chat',
+  path: '/api/chat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApplyIndexRoute = ApplyIndexRouteImport.update({
+  id: '/apply/',
+  path: '/apply/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApplyRoleRoute = ApplyRoleRouteImport.update({
+  id: '/apply/$role',
+  path: '/apply/$role',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DashboardRoleRoute = DashboardRoleRouteImport.update({
+  id: '/dashboard/$role',
+  path: '/dashboard/$role',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/control-panel': typeof ControlPanelRoute
+  '/creator-manager': typeof CreatorManagerRoute
+  '/franchise-manager': typeof FranchiseManagerRoute
+  '/influencer-manager': typeof InfluencerManagerRoute
+  '/marketplace-manager': typeof MarketplaceManagerRoute
+  '/reseller-manager': typeof ResellerManagerRoute
+  '/seo-manager': typeof SeoManagerRoute
+  '/api/chat': typeof ApiChatRoute
+  '/apply/$role': typeof ApplyRoleRoute
+  '/dashboard/$role': typeof DashboardRoleRoute
+  '/apply/': typeof ApplyIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/control-panel': typeof ControlPanelRoute
+  '/creator-manager': typeof CreatorManagerRoute
+  '/franchise-manager': typeof FranchiseManagerRoute
+  '/influencer-manager': typeof InfluencerManagerRoute
+  '/marketplace-manager': typeof MarketplaceManagerRoute
+  '/reseller-manager': typeof ResellerManagerRoute
+  '/seo-manager': typeof SeoManagerRoute
+  '/api/chat': typeof ApiChatRoute
+  '/apply/$role': typeof ApplyRoleRoute
+  '/dashboard/$role': typeof DashboardRoleRoute
+  '/apply': typeof ApplyIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/control-panel': typeof ControlPanelRoute
+  '/creator-manager': typeof CreatorManagerRoute
+  '/franchise-manager': typeof FranchiseManagerRoute
+  '/influencer-manager': typeof InfluencerManagerRoute
+  '/marketplace-manager': typeof MarketplaceManagerRoute
+  '/reseller-manager': typeof ResellerManagerRoute
+  '/seo-manager': typeof SeoManagerRoute
+  '/api/chat': typeof ApiChatRoute
+  '/apply/$role': typeof ApplyRoleRoute
+  '/dashboard/$role': typeof DashboardRoleRoute
+  '/apply/': typeof ApplyIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/control-panel'
+    | '/creator-manager'
+    | '/franchise-manager'
+    | '/influencer-manager'
+    | '/marketplace-manager'
+    | '/reseller-manager'
+    | '/seo-manager'
+    | '/api/chat'
+    | '/apply/$role'
+    | '/dashboard/$role'
+    | '/apply/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/control-panel'
+    | '/creator-manager'
+    | '/franchise-manager'
+    | '/influencer-manager'
+    | '/marketplace-manager'
+    | '/reseller-manager'
+    | '/seo-manager'
+    | '/api/chat'
+    | '/apply/$role'
+    | '/dashboard/$role'
+    | '/apply'
+  id:
+    | '__root__'
+    | '/'
+    | '/control-panel'
+    | '/creator-manager'
+    | '/franchise-manager'
+    | '/influencer-manager'
+    | '/marketplace-manager'
+    | '/reseller-manager'
+    | '/seo-manager'
+    | '/api/chat'
+    | '/apply/$role'
+    | '/dashboard/$role'
+    | '/apply/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ControlPanelRoute: typeof ControlPanelRoute
+  CreatorManagerRoute: typeof CreatorManagerRoute
+  FranchiseManagerRoute: typeof FranchiseManagerRoute
+  InfluencerManagerRoute: typeof InfluencerManagerRoute
+  MarketplaceManagerRoute: typeof MarketplaceManagerRoute
+  ResellerManagerRoute: typeof ResellerManagerRoute
+  SeoManagerRoute: typeof SeoManagerRoute
+  ApiChatRoute: typeof ApiChatRoute
+  ApplyRoleRoute: typeof ApplyRoleRoute
+  DashboardRoleRoute: typeof DashboardRoleRoute
+  ApplyIndexRoute: typeof ApplyIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +195,99 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/control-panel': {
+      id: '/control-panel'
+      path: '/control-panel'
+      fullPath: '/control-panel'
+      preLoaderRoute: typeof ControlPanelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/creator-manager': {
+      id: '/creator-manager'
+      path: '/creator-manager'
+      fullPath: '/creator-manager'
+      preLoaderRoute: typeof CreatorManagerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/franchise-manager': {
+      id: '/franchise-manager'
+      path: '/franchise-manager'
+      fullPath: '/franchise-manager'
+      preLoaderRoute: typeof FranchiseManagerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/influencer-manager': {
+      id: '/influencer-manager'
+      path: '/influencer-manager'
+      fullPath: '/influencer-manager'
+      preLoaderRoute: typeof InfluencerManagerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/marketplace-manager': {
+      id: '/marketplace-manager'
+      path: '/marketplace-manager'
+      fullPath: '/marketplace-manager'
+      preLoaderRoute: typeof MarketplaceManagerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reseller-manager': {
+      id: '/reseller-manager'
+      path: '/reseller-manager'
+      fullPath: '/reseller-manager'
+      preLoaderRoute: typeof ResellerManagerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/seo-manager': {
+      id: '/seo-manager'
+      path: '/seo-manager'
+      fullPath: '/seo-manager'
+      preLoaderRoute: typeof SeoManagerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/chat': {
+      id: '/api/chat'
+      path: '/api/chat'
+      fullPath: '/api/chat'
+      preLoaderRoute: typeof ApiChatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/apply/': {
+      id: '/apply/'
+      path: '/apply'
+      fullPath: '/apply/'
+      preLoaderRoute: typeof ApplyIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/apply/$role': {
+      id: '/apply/$role'
+      path: '/apply/$role'
+      fullPath: '/apply/$role'
+      preLoaderRoute: typeof ApplyRoleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dashboard/$role': {
+      id: '/dashboard/$role'
+      path: '/dashboard/$role'
+      fullPath: '/dashboard/$role'
+      preLoaderRoute: typeof DashboardRoleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ControlPanelRoute: ControlPanelRoute,
+  CreatorManagerRoute: CreatorManagerRoute,
+  FranchiseManagerRoute: FranchiseManagerRoute,
+  InfluencerManagerRoute: InfluencerManagerRoute,
+  MarketplaceManagerRoute: MarketplaceManagerRoute,
+  ResellerManagerRoute: ResellerManagerRoute,
+  SeoManagerRoute: SeoManagerRoute,
+  ApiChatRoute: ApiChatRoute,
+  ApplyRoleRoute: ApplyRoleRoute,
+  DashboardRoleRoute: DashboardRoleRoute,
+  ApplyIndexRoute: ApplyIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
