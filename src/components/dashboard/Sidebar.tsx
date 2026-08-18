@@ -151,22 +151,22 @@ function NavItem({
     <button
       type="button"
       onClick={onClick}
+      data-active={active ? "true" : "false"}
       aria-current={active ? "page" : undefined}
       className={cn(
-        "group press-3d sheen-3d focus-ring flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm transition",
-        active
-          ? "bg-gradient-brand text-brand-foreground shadow-glow"
-          : accent
-            ? "text-foreground bg-brand/10 hover:bg-brand/20 border border-brand/20"
-            : "text-sidebar-foreground/80 hover:bg-white/5 hover:text-foreground"
+        "sv-navitem group focus-ring flex w-full items-center gap-3 rounded-xl px-2.5 py-2 text-sm",
+        active ? "text-white font-semibold" : "text-sidebar-foreground/85 hover:text-foreground",
       )}
     >
-      <Icon className="h-4 w-4 shrink-0" aria-hidden="true" />
+      <span className="sv-chip grid h-7 w-7 shrink-0 place-items-center rounded-lg transition-transform duration-300 group-hover:scale-110">
+        <Icon className="h-3.5 w-3.5" aria-hidden="true" />
+      </span>
       <span className="truncate">{label}</span>
-      {accent && !active && <Sparkles className="ml-auto h-3 w-3 text-[oklch(0.78_0.18_290)]" aria-hidden="true" />}
-      {active && <span className="ml-auto h-1.5 w-1.5 rounded-full bg-white" aria-hidden="true" />}
+      {accent && !active && <Sparkles className="ml-auto h-3 w-3 text-[oklch(0.82_0.15_195)]" aria-hidden="true" />}
+      {active && <span className="ml-auto h-1.5 w-1.5 rounded-full bg-white shadow-[0_0_10px_2px_oklch(1_0_0/0.6)]" aria-hidden="true" />}
     </button>
   );
 }
+
 
 export const Sidebar = memo(SidebarBase) as typeof SidebarBase;
