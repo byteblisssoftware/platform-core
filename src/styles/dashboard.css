@@ -682,3 +682,11 @@ html.light body:has(.dm-theme),
     0 0 0 1px oklch(0.9 0.12 255 / 0.28);
 }
 .sv-kpi-top { height: 4px; opacity: 1; }
+
+/* contrast on the brighter surfaces */
+.sv-rail h2 { color: oklch(1 0 0 / 0.72); }
+.sv-rail .sv-navitem { color: oklch(1 0 0 / 0.92); }
+.sv-kpi .text-muted-foreground { color: oklch(1 0 0 / 0.78); }
+html.light .sv-rail h2 { color: oklch(0.42 0.06 268); }
+html.light .sv-rail .sv-navitem:not([data-active="true"]) { color: oklch(0.34 0.05 268); }
+html.light .sv-kpi .text-muted-foreground { color: oklch(0.48 0.03 268); }
