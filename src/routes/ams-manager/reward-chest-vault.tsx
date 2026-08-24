@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CollectibleVault } from "@/components/ams/collectible/CollectibleVault";
 import { ROLE_REWARD_CHEST } from "@/lib/ams/role-assets";
 
-export const Route = createFileRoute("/_authenticated/reward-chest-vault")({
+export const Route = createFileRoute("/ams-manager/reward-chest-vault")({
   head: () => ({
     meta: [
       { title: "Reward Chest Vault — Premium 3D Chests" },

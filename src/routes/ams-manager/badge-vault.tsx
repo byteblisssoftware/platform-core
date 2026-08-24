@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CollectibleVault } from "@/components/ams/collectible/CollectibleVault";
 import { ROLE_BADGE } from "@/lib/ams/role-assets";
 
-export const Route = createFileRoute("/_authenticated/badge-vault")({
+export const Route = createFileRoute("/ams-manager/badge-vault")({
   head: () => ({
     meta: [
       { title: "Badge Vault — Premium 3D Badges" },

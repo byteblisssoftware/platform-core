@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Gift } from "lucide-react";
 import { EngineDashboard, StatusChip } from "@/components/ams/shared/EngineDashboard";
 
-export const Route = createFileRoute("/_authenticated/rewards")({
+export const Route = createFileRoute("/ams-manager/rewards")({
   head: () => ({
     meta: [
       { title: "Reward Engine — AMS" },

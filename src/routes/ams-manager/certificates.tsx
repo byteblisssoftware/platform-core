@@ -7,7 +7,7 @@ import { VaultToolbar } from "@/components/ams/collectible/VaultToolbar";
 import { ROLE_CERTIFICATE } from "@/lib/ams/role-assets";
 import { ROLES } from "@/lib/ams/roles";
 
-export const Route = createFileRoute("/_authenticated/certificates")({
+export const Route = createFileRoute("/ams-manager/certificates")({
   head: () => ({
     meta: [
       { title: "Certificate Vault — Premium 3D Certificates" },

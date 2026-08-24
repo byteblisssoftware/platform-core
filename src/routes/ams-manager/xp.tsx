@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { EngineDashboard, StatusChip } from "@/components/ams/shared/EngineDashboard";
 
-export const Route = createFileRoute("/_authenticated/xp")({
+export const Route = createFileRoute("/ams-manager/xp")({
   head: () => ({
     meta: [
       { title: "XP Engine — AMS" },

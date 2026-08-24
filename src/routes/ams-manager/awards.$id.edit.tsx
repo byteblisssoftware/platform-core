@@ -7,7 +7,7 @@ import { AwardForm } from "@/components/ams/AwardForm";
 import { getAward } from "@/lib/ams/awards.api";
 import { EmptyState } from "@/components/ams/shared/EmptyState";
 
-export const Route = createFileRoute("/_authenticated/awards/$id/edit")({
+export const Route = createFileRoute("/ams-manager/awards/$id/edit")({
   head: () => ({
     meta: [
       { title: "Edit Award — AMS" },

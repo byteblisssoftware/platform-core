@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import { EngineDashboard, StatusChip } from "@/components/ams/shared/EngineDashboard";
 import { ROLES } from "@/lib/ams/roles";
 
-export const Route = createFileRoute("/_authenticated/role-manager/")({
+export const Route = createFileRoute("/ams-manager/role-manager/")({
   head: () => ({
     meta: [
       { title: "Role Manager — AMS" },

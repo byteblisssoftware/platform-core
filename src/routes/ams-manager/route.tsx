@@ -7,7 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 
 // Auth is handled by the parent Software Vala application.
 // This module assumes the user is already authenticated upstream.
-export const Route = createFileRoute("/_authenticated")({
+export const Route = createFileRoute("/ams-manager")({
   ssr: false,
   component: AuthenticatedLayout,
 });

@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { MuseumShowcase } from "@/components/ams/museum/MuseumShowcase";
 import { getShowcase, SHOWCASES } from "@/lib/ams/museum";
 
-export const Route = createFileRoute("/_authenticated/museum/$showcase")({
+export const Route = createFileRoute("/ams-manager/museum/$showcase")({
   head: ({ params }) => {
     const s = getShowcase(params.showcase);
     const title = s ? `${s.title} — Software Vala Museum` : "Showcase Unavailable";

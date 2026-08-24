@@ -7,7 +7,7 @@ import { VaultToolbar } from "@/components/ams/collectible/VaultToolbar";
 import { ROLE_AWARD } from "@/lib/ams/role-assets";
 import { ROLES } from "@/lib/ams/roles";
 
-export const Route = createFileRoute("/_authenticated/award-vault")({
+export const Route = createFileRoute("/ams-manager/award-vault")({
   head: () => ({
     meta: [
       { title: "Award Vault — Premium 3D Awards" },

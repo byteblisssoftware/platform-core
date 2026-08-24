@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Trophy } from "lucide-react";
 import { EngineDashboard, StatusChip } from "@/components/ams/shared/EngineDashboard";
 
-export const Route = createFileRoute("/_authenticated/trophies")({
+export const Route = createFileRoute("/ams-manager/trophies")({
   head: () => ({
     meta: [
       { title: "Trophy Engine — AMS" },

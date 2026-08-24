@@ -4,7 +4,7 @@ import { TrophyStageGallery } from "@/components/ams/collectible/TrophyStageGall
 import { DuplicateSilhouetteChecker } from "@/components/ams/collectible/DuplicateSilhouetteChecker";
 import { TROPHIES, ROLE_LIST } from "@/lib/ams/trophy-catalog";
 
-export const Route = createFileRoute("/_authenticated/trophy-stages")({
+export const Route = createFileRoute("/ams-manager/trophy-stages")({
   head: () => ({
     meta: [
       { title: "Trophy Stage Vault — 180 Staged Role Trophies" },

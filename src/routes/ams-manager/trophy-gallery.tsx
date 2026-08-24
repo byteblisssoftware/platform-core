@@ -36,7 +36,7 @@ const ROLE_THEME: Record<string, { grad: string; particle: string; unlock: Unloc
   user:       { grad: "radial-gradient(900px 400px at 50% 0%, rgba(148,163,184,0.28), transparent 60%), linear-gradient(160deg,#0e1319,#04070a)", particle: "#e2e8f0", unlock: "starter", material: "Silver Frost · Etched Base", shape: "First-Step Star Trophy" },
 };
 
-export const Route = createFileRoute("/_authenticated/trophy-gallery")({
+export const Route = createFileRoute("/ams-manager/trophy-gallery")({
   head: () => ({
     meta: [
       { title: "Trophy Gallery — Museum of Roles" },

@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { EngineDashboard, StatusChip } from "@/components/ams/shared/EngineDashboard";
 
-export const Route = createFileRoute("/_authenticated/claims")({
+export const Route = createFileRoute("/ams-manager/claims")({
   head: () => ({
     meta: [
       { title: "Claims — AMS" },

@@ -4,7 +4,7 @@ import { PageHeader } from "@/components/ams/shared/PageHeader";
 import { listAwards } from "@/lib/ams/awards.api";
 import { AWARD_CATEGORIES } from "@/lib/ams/types";
 
-export const Route = createFileRoute("/_authenticated/awards/categories")({
+export const Route = createFileRoute("/ams-manager/awards/categories")({
   head: () => ({
     meta: [
       { title: "Award Categories — AMS" },

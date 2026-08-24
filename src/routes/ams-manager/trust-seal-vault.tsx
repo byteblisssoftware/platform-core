@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CollectibleVault } from "@/components/ams/collectible/CollectibleVault";
 import { ROLE_TRUST_SEAL } from "@/lib/ams/role-assets";
 
-export const Route = createFileRoute("/_authenticated/trust-seal-vault")({
+export const Route = createFileRoute("/ams-manager/trust-seal-vault")({
   head: () => ({
     meta: [
       { title: "Trust Seal Vault — Premium 3D Wax Seals" },

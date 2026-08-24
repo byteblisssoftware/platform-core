@@ -3,7 +3,7 @@ import { Crown, Gem } from "lucide-react";
 import { CAREER_STAGES, COLLECTION_TYPES, RARITY_COLLECTIONS } from "@/lib/ams/signature-collection";
 import { ROLES } from "@/lib/ams/roles";
 
-export const Route = createFileRoute("/_authenticated/collection/")({
+export const Route = createFileRoute("/ams-manager/collection/")({
   head: () => ({
     meta: [
       { title: "Signature Collections — Software Vala AMS" },

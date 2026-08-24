@@ -7,7 +7,7 @@ import { VaultToolbar } from "@/components/ams/collectible/VaultToolbar";
 import { ROLE_BADGE } from "@/lib/ams/role-assets";
 import { ROLES } from "@/lib/ams/roles";
 
-export const Route = createFileRoute("/_authenticated/badges")({
+export const Route = createFileRoute("/ams-manager/badges")({
   head: () => ({
     meta: [
       { title: "Badge Vault — Premium 3D Collectibles" },

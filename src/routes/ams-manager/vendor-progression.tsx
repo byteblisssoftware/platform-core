@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { VENDOR_STAGES } from "@/lib/ams/vendor-stages";
 import { ProgressionTimeline } from "@/components/ams/progression/ProgressionTimeline";
 
-export const Route = createFileRoute("/_authenticated/vendor-progression")({
+export const Route = createFileRoute("/ams-manager/vendor-progression")({
   head: () => ({
     meta: [
       { title: "Vendor Progression — 10 Stage Career" },

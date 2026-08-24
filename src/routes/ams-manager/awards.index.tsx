@@ -30,7 +30,7 @@ import {
 import type { AwardFilters, AwardStatus } from "@/lib/ams/types";
 import { toast } from "sonner";
 
-export const Route = createFileRoute("/_authenticated/awards/")({
+export const Route = createFileRoute("/ams-manager/awards/")({
   head: () => ({
     meta: [
       { title: "Award Management — AMS" },

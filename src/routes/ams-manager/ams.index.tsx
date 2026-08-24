@@ -10,7 +10,7 @@ import { EmptyState } from "@/components/ams/shared/EmptyState";
 import { listTickets } from "@/lib/ams/tickets.functions";
 import { AMS_STATUSES, AMS_PRIORITIES, STATUS_META, PRIORITY_META, type AmsStatus, type AmsPriority } from "@/lib/ams/tickets.types";
 
-export const Route = createFileRoute("/_authenticated/ams/")({
+export const Route = createFileRoute("/ams-manager/ams/")({
   head: () => ({
     meta: [
       { title: "AMS — Tickets" },

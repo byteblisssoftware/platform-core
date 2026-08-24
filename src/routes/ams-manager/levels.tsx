@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { EngineDashboard, StatusChip } from "@/components/ams/shared/EngineDashboard";
 
-export const Route = createFileRoute("/_authenticated/levels")({
+export const Route = createFileRoute("/ams-manager/levels")({
   head: () => ({
     meta: [
       { title: "Level Engine — AMS" },

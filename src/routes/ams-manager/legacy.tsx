@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Archive } from "lucide-react";
 import { EngineDashboard, StatusChip } from "@/components/ams/shared/EngineDashboard";
 
-export const Route = createFileRoute("/_authenticated/legacy")({
+export const Route = createFileRoute("/ams-manager/legacy")({
   head: () => ({
     meta: [
       { title: "Legacy Engine — AMS" },

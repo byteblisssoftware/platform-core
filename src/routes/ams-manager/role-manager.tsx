@@ -1,5 +1,5 @@
 import { createFileRoute, Outlet } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/_authenticated/role-manager")({
+export const Route = createFileRoute("/ams-manager/role-manager")({
   component: () => <Outlet />,
 });

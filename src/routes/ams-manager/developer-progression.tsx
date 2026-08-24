@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DEVELOPER_STAGES } from "@/lib/ams/developer-stages";
 import { StageCard } from "@/components/ams/trophy-gallery/StageCard";
 
-export const Route = createFileRoute("/_authenticated/developer-progression")({
+export const Route = createFileRoute("/ams-manager/developer-progression")({
   head: () => ({
     meta: [
       { title: "Developer Progression — 10 Stage Career" },

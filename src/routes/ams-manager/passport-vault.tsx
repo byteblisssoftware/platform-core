@@ -8,7 +8,7 @@ import { PassportQR } from "@/components/ams/collectible/PassportQR";
 import { ROLE_PASSPORT } from "@/lib/ams/role-assets";
 import { ROLES } from "@/lib/ams/roles";
 
-export const Route = createFileRoute("/_authenticated/passport-vault")({
+export const Route = createFileRoute("/ams-manager/passport-vault")({
   head: () => ({
     meta: [
       { title: "Passport Vault — Premium 3D Digital Passports" },

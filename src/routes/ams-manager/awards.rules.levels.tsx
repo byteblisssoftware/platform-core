@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpCircle } from "lucide-react";
 import { LibraryShell } from "@/components/ams/shared/LibraryShell";
 
-export const Route = createFileRoute("/_authenticated/awards/rules/levels")({
+export const Route = createFileRoute("/ams-manager/awards/rules/levels")({
   head: () => ({
     meta: [
       { title: "Level Rules — AMS" },

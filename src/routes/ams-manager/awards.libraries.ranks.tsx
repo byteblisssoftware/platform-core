@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { LibraryPage } from "@/components/ams/shared/LibraryPage";
 
-export const Route = createFileRoute("/_authenticated/awards/libraries/ranks")({
+export const Route = createFileRoute("/ams-manager/awards/libraries/ranks")({
   head: () => ({
     meta: [
       { title: "Rank Library — AMS" },

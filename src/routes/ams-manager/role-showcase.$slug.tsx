@@ -11,7 +11,7 @@ import {
 import { StageTrophy } from "@/components/ams/trophy-gallery/StageTrophy";
 import { playUnlock, type UnlockPreset } from "@/lib/ams/trophy-sounds";
 
-export const Route = createFileRoute("/_authenticated/role-showcase/$slug")({
+export const Route = createFileRoute("/ams-manager/role-showcase/$slug")({
   head: ({ params }) => {
     const role = ROLES.find((r) => r.slug === params.slug);
     return {

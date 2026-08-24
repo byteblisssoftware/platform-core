@@ -18,7 +18,7 @@ import {
   type AmsStatus, type AmsChatChannel,
 } from "@/lib/ams/tickets.types";
 
-export const Route = createFileRoute("/_authenticated/ams/$id")({
+export const Route = createFileRoute("/ams-manager/ams/$id")({
   head: () => ({
     meta: [
       { title: "Ticket — AMS" },

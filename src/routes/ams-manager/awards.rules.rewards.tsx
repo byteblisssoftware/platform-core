@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Gift } from "lucide-react";
 import { LibraryShell } from "@/components/ams/shared/LibraryShell";
 
-export const Route = createFileRoute("/_authenticated/awards/rules/rewards")({
+export const Route = createFileRoute("/ams-manager/awards/rules/rewards")({
   head: () => ({
     meta: [
       { title: "Reward Rules — AMS" },

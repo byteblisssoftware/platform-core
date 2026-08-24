@@ -7,7 +7,7 @@ import { VaultToolbar } from "@/components/ams/collectible/VaultToolbar";
 import { ROLE_ACHIEVEMENT } from "@/lib/ams/role-assets";
 import { ROLES } from "@/lib/ams/roles";
 
-export const Route = createFileRoute("/_authenticated/achievement-vault")({
+export const Route = createFileRoute("/ams-manager/achievement-vault")({
   head: () => ({
     meta: [
       { title: "Achievement Vault — Premium 3D Achievements" },

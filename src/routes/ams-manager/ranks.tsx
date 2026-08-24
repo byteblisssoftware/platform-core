@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Crown } from "lucide-react";
 import { EngineDashboard, StatusChip } from "@/components/ams/shared/EngineDashboard";
 
-export const Route = createFileRoute("/_authenticated/ranks")({
+export const Route = createFileRoute("/ams-manager/ranks")({
   head: () => ({
     meta: [
       { title: "Rank Engine — AMS" },

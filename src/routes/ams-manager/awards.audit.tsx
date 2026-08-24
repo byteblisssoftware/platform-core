@@ -4,7 +4,7 @@ import { PageHeader } from "@/components/ams/shared/PageHeader";
 import { EmptyState } from "@/components/ams/shared/EmptyState";
 import { listAwards } from "@/lib/ams/awards.api";
 
-export const Route = createFileRoute("/_authenticated/awards/audit")({
+export const Route = createFileRoute("/ams-manager/awards/audit")({
   head: () => ({
     meta: [
       { title: "Award Audit — AMS" },

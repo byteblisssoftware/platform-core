@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CollectibleVault } from "@/components/ams/collectible/CollectibleVault";
 import { ROLE_TROPHY } from "@/lib/ams/role-assets";
 
-export const Route = createFileRoute("/_authenticated/trophy-vault")({
+export const Route = createFileRoute("/ams-manager/trophy-vault")({
   head: () => ({
     meta: [
       { title: "Trophy Vault — Premium 3D Trophies" },

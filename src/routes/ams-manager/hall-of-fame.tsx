@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Star } from "lucide-react";
 import { EngineDashboard, StatusChip } from "@/components/ams/shared/EngineDashboard";
 
-export const Route = createFileRoute("/_authenticated/hall-of-fame")({
+export const Route = createFileRoute("/ams-manager/hall-of-fame")({
   head: () => ({
     meta: [
       { title: "Hall of Fame — AMS" },

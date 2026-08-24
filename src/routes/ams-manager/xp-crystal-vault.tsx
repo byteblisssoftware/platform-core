@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CollectibleVault } from "@/components/ams/collectible/CollectibleVault";
 import { ROLE_XP_CRYSTAL } from "@/lib/ams/role-assets";
 
-export const Route = createFileRoute("/_authenticated/xp-crystal-vault")({
+export const Route = createFileRoute("/ams-manager/xp-crystal-vault")({
   head: () => ({
     meta: [
       { title: "XP Crystal Vault — Premium 3D Crystals" },

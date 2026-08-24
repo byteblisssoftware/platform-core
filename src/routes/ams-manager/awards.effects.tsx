@@ -9,7 +9,7 @@ import {
   playRankUp, playFireworks, playDiamond, playMythic,
 } from "@/lib/celebrate";
 
-export const Route = createFileRoute("/_authenticated/awards/effects")({
+export const Route = createFileRoute("/ams-manager/awards/effects")({
   head: () => ({
     meta: [
       { title: "Effects Library — AMS" },

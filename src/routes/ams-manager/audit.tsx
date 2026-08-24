@@ -5,7 +5,7 @@ const TITLE = "Audit Logs — AMS";
 const DESCRIPTION =
   "Immutable audit trail across users, rewards, XP, achievements, admin actions and system events with actor, target and outcome.";
 
-export const Route = createFileRoute("/_authenticated/audit")({
+export const Route = createFileRoute("/ams-manager/audit")({
   head: () => ({
     meta: [
       { title: TITLE },

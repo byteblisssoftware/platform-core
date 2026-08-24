@@ -9,7 +9,7 @@ import { ROLE_CERTIFICATE } from "@/lib/ams/role-assets";
 import { certificateIdentity } from "@/lib/ams/certificate-id";
 import { ROLES } from "@/lib/ams/roles";
 
-export const Route = createFileRoute("/_authenticated/certificate-vault")({
+export const Route = createFileRoute("/ams-manager/certificate-vault")({
   head: () => ({
     meta: [
       { title: "Certificate Vault — Premium 3D Certificates" },

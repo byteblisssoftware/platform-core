@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { BookMarked } from "lucide-react";
 import { EngineDashboard, StatusChip } from "@/components/ams/shared/EngineDashboard";
 
-export const Route = createFileRoute("/_authenticated/passport")({
+export const Route = createFileRoute("/ams-manager/passport")({
   head: () => ({
     meta: [
       { title: "Passport Engine — AMS" },

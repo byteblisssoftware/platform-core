@@ -11,7 +11,7 @@ import { PageHeader } from "@/components/ams/shared/PageHeader";
 import { createTicket } from "@/lib/ams/tickets.functions";
 import { AMS_PRIORITIES, PRIORITY_META, type AmsPriority } from "@/lib/ams/tickets.types";
 
-export const Route = createFileRoute("/_authenticated/ams/new")({
+export const Route = createFileRoute("/ams-manager/ams/new")({
   head: () => ({
     meta: [
       { title: "New ticket — AMS" },

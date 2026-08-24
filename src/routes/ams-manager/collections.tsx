@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Layers } from "lucide-react";
 import { EngineDashboard, StatusChip } from "@/components/ams/shared/EngineDashboard";
 
-export const Route = createFileRoute("/_authenticated/collections")({
+export const Route = createFileRoute("/ams-manager/collections")({
   head: () => ({
     meta: [
       { title: "Collection Engine — AMS" },

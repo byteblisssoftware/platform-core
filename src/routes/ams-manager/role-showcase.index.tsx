@@ -4,7 +4,7 @@ import { ROLE_THEMES } from "@/lib/ams/role-themes";
 import { RolePattern } from "@/components/ams/showcase/RolePattern";
 import { ArrowRight } from "lucide-react";
 
-export const Route = createFileRoute("/_authenticated/role-showcase/")({
+export const Route = createFileRoute("/ams-manager/role-showcase/")({
   head: () => ({
     meta: [
       { title: "Role Showcase — Sovereign Rooms" },

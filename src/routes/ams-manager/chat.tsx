@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ChatScreen } from "@/components/ams/chat/ChatScreen";
 
-export const Route = createFileRoute("/_authenticated/chat")({
+export const Route = createFileRoute("/ams-manager/chat")({
   head: () => ({
     meta: [
       { title: "Chat — AMS Enterprise Communication" },

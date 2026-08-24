@@ -18,7 +18,7 @@ import {
 } from "@/lib/ams/awards.api";
 import { toast } from "sonner";
 
-export const Route = createFileRoute("/_authenticated/awards/$id")({
+export const Route = createFileRoute("/ams-manager/awards/$id")({
   head: () => ({
     meta: [
       { title: "Award Detail — AMS" },

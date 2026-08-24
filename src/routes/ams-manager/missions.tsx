@@ -23,7 +23,7 @@ import {
   missionsSnapshot, missionsServerSnapshot,
 } from "@/lib/ams/missions.api";
 
-export const Route = createFileRoute("/_authenticated/missions")({
+export const Route = createFileRoute("/ams-manager/missions")({
   head: () => ({
     meta: [
       { title: "Missions — AMS" },

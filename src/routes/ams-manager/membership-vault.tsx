@@ -6,7 +6,7 @@ import { ROLE_MEMBERSHIP } from "@/lib/ams/role-assets";
 import { Collectible3D } from "@/components/ams/collectible/Collectible3D";
 import { RoleFilter, type RoleFilterValue } from "@/components/ams/collectible/RoleFilter";
 
-export const Route = createFileRoute("/_authenticated/membership-vault")({
+export const Route = createFileRoute("/ams-manager/membership-vault")({
   head: () => ({
     meta: [
       { title: "Membership Vault — Premium 3D Member Cards" },

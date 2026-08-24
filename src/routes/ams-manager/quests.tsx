@@ -22,7 +22,7 @@ import {
   upsertStage, removeStage, completeStage, listMissions,
 } from "@/lib/ams/missions.api";
 
-export const Route = createFileRoute("/_authenticated/quests")({
+export const Route = createFileRoute("/ams-manager/quests")({
   head: () => ({
     meta: [
       { title: "Quests — AMS" },

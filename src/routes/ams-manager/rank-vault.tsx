@@ -7,7 +7,7 @@ import { Collectible3D } from "@/components/ams/collectible/Collectible3D";
 import { RoleFilter, type RoleFilterValue } from "@/components/ams/collectible/RoleFilter";
 import { VaultToolbar } from "@/components/ams/collectible/VaultToolbar";
 
-export const Route = createFileRoute("/_authenticated/rank-vault")({
+export const Route = createFileRoute("/ams-manager/rank-vault")({
   head: () => ({
     meta: [
       { title: "Rank Vault — Premium 3D Rank Emblems" },

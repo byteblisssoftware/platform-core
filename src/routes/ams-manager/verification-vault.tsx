@@ -7,7 +7,7 @@ import { Collectible3D } from "@/components/ams/collectible/Collectible3D";
 import { RoleFilter, type RoleFilterValue } from "@/components/ams/collectible/RoleFilter";
 import { VaultToolbar } from "@/components/ams/collectible/VaultToolbar";
 
-export const Route = createFileRoute("/_authenticated/verification-vault")({
+export const Route = createFileRoute("/ams-manager/verification-vault")({
   head: () => ({
     meta: [
       { title: "Verification Vault — Premium 3D Trust Shields" },

@@ -3,7 +3,7 @@ import { Landmark } from "lucide-react";
 import { SHOWCASES, ROLE_ENVIRONMENT } from "@/lib/ams/museum";
 import { ROLES } from "@/lib/ams/roles";
 
-export const Route = createFileRoute("/_authenticated/museum/")({
+export const Route = createFileRoute("/ams-manager/museum/")({
   head: () => ({
     meta: [
       { title: "Presentation Engine — Software Vala Museums" },

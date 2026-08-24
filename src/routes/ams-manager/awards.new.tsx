@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { PageHeader } from "@/components/ams/shared/PageHeader";
 import { AwardForm } from "@/components/ams/AwardForm";
 
-export const Route = createFileRoute("/_authenticated/awards/new")({
+export const Route = createFileRoute("/ams-manager/awards/new")({
   head: () => ({
     meta: [
       { title: "New Award — AMS" },
