@@ -6,7 +6,7 @@ import {
   DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
-import { RouteHistoryArrows } from "@/components/layout/RouteHistory";
+import { RouteHistoryArrows } from "@/components/ams-layout/RouteHistory";
 import { SoundControl } from "@/components/ams/ui/SoundControl";
 
 const ICON_BTN =

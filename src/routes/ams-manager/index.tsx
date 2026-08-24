@@ -6,7 +6,7 @@ import {
   Row1Totals, Row2Progress, Row3Collections, Row4Leaderboards, Row5Missions,
   Row6Engagement, Row7Wallets, Row8Rewards, Row9Timelines, Row10AI,
   Row11Heatmaps, Row12Analytics, Row13Halls, SectionTitle,
-} from "@/components/dashboard/Widgets";
+} from "@/components/ams-dashboard/Widgets";
 import { RoleAchievementShowcase } from "@/components/ams/shared/RoleAchievementShowcase";
 
 const dashOpts = (fn: () => Promise<any>) =>

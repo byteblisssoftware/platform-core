@@ -1,8 +1,8 @@
 import { createFileRoute, Outlet } from "@tanstack/react-router";
-import { AppShell } from "@/components/layout/AppShell";
+import { AppShell } from "@/components/ams-layout/AppShell";
 import { CelebrationProvider } from "@/components/ams/effects/Celebration";
 import { Toaster } from "@/components/ui/sonner";
-import { RouteHistoryProvider, RouteHistoryPanel } from "@/components/layout/RouteHistory";
+import { RouteHistoryProvider, RouteHistoryPanel } from "@/components/ams-layout/RouteHistory";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
 // Auth is handled by the parent Software Vala application.

@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import { ChevronDown, PanelLeftClose, PanelLeftOpen, Search, X, Trophy } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { primaryNav, navGroups, bottomNav, type NavItem } from "@/lib/nav";
+import { primaryNav, navGroups, bottomNav, type NavItem } from "@/lib/ams-nav";
 
 const COLLAPSE_KEY = "ams:sidebar:collapsed";
 

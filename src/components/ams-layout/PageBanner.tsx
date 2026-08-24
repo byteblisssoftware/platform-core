@@ -1,6 +1,6 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Activity, ChevronRight, Home } from "lucide-react";
-import { navMetaForPath } from "@/lib/nav";
+import { navMetaForPath } from "@/lib/ams-nav";
 
 /**
  * Per-screen hero banner. Matches the reference design language:
