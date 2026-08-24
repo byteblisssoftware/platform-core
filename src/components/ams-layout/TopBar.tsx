@@ -23,7 +23,7 @@ export function TopBar({ onOpenMenu }: { onOpenMenu?: () => void }) {
           <Menu className="h-[18px] w-[18px]" />
         </button>
 
-        <Link to="/ams-manager/ams-manager" className="flex shrink-0 items-center gap-2 lg:hidden" aria-label="AMS Manager home">
+        <Link to="/ams-manager" className="flex shrink-0 items-center gap-2 lg:hidden" aria-label="AMS Manager home">
           <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-primary to-primary-glow text-primary-foreground">
             <Trophy className="h-4 w-4" />
           </span>

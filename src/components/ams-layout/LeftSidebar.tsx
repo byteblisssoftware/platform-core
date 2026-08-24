@@ -13,7 +13,7 @@ import { COLLECTION_TYPES } from "@/lib/ams/signature-collection";
 type Item = { to: string; label: string; icon: React.ComponentType<{ className?: string }>; num: string };
 
 const NAV: Item[] = [
-  { num: "01", to: "/ams-manager/ams-manager",              label: "Command Center", icon: LayoutDashboard },
+  { num: "01", to: "/ams-manager",              label: "Command Center", icon: LayoutDashboard },
   { num: "02", to: "/ams-manager/achievements",  label: "Achievements",   icon: Trophy },
   { num: "03", to: "/ams-manager/badges",        label: "Badges",         icon: Shield },
   { num: "04", to: "/ams-manager/trophies",      label: "Trophies",       icon: Award },

@@ -16,7 +16,7 @@ export type NavGroup = { label: string; items: NavItem[] };
 
 /** Always-visible top-level entries. */
 export const primaryNav: NavItem[] = [
-  { to: "/ams-manager/ams-manager", label: "Command Center", icon: LayoutDashboard },
+  { to: "/ams-manager", label: "Command Center", icon: LayoutDashboard },
   { to: "/ams-manager/ams", label: "AMS Tickets", icon: Ticket },
 ];
 

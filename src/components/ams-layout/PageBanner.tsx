@@ -32,7 +32,7 @@ export function PageBanner() {
             aria-label="Breadcrumb"
             className="flex min-w-0 items-center gap-1.5 text-[10px] uppercase tracking-[0.18em] text-primary-foreground/70 sm:text-[11px]"
           >
-            <Link to="/ams-manager/ams-manager" className="flex items-center gap-1 transition-opacity hover:opacity-100 opacity-80">
+            <Link to="/ams-manager" className="flex items-center gap-1 transition-opacity hover:opacity-100 opacity-80">
               <Home className="h-3 w-3" /> AMS
             </Link>
             <ChevronRight className="h-3 w-3 opacity-50" />
