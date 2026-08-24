@@ -13,51 +13,51 @@ import { COLLECTION_TYPES } from "@/lib/ams/signature-collection";
 type Item = { to: string; label: string; icon: React.ComponentType<{ className?: string }>; num: string };
 
 const NAV: Item[] = [
-  { num: "01", to: "/",              label: "Command Center", icon: LayoutDashboard },
-  { num: "02", to: "/achievements",  label: "Achievements",   icon: Trophy },
-  { num: "03", to: "/badges",        label: "Badges",         icon: Shield },
-  { num: "04", to: "/trophies",      label: "Trophies",       icon: Award },
-  { num: "05", to: "/xp",            label: "XP",             icon: Zap },
-  { num: "06", to: "/levels",        label: "Levels",         icon: ArrowUpCircle },
-  { num: "07", to: "/ranks",         label: "Ranks",          icon: Crown },
-  { num: "08", to: "/missions",      label: "Missions",       icon: Target },
-  { num: "09", to: "/quests",        label: "Quests",         icon: Compass },
-  { num: "10", to: "/challenges",    label: "Challenges",     icon: Swords },
-  { num: "11", to: "/rewards",       label: "Rewards",        icon: Gift },
-  { num: "12", to: "/claims",        label: "Claims",         icon: PackageCheck },
-  { num: "13", to: "/leaderboards",  label: "Leaderboards",   icon: BarChart3 },
-  { num: "14", to: "/analytics",     label: "Analytics",      icon: LineChart },
-  { num: "15", to: "/notifications", label: "Notifications",  icon: Bell },
-  { num: "16", to: "/audit",         label: "Audit Logs",     icon: ScrollText },
-  { num: "17", to: "/hall-of-fame",  label: "Hall of Fame",   icon: Star },
-  { num: "18", to: "/ai",            label: "AI Center",      icon: Sparkles },
-  { num: "19", to: "/chat",          label: "Chat",           icon: MessageSquare },
-  { num: "20", to: "/museum",        label: "Museums",        icon: Landmark },
-  { num: "21", to: "/collection",     label: "Collections",    icon: Crown },
-  { num: "22", to: "/settings",      label: "Settings",       icon: Settings },
+  { num: "01", to: "/ams-manager/ams-manager",              label: "Command Center", icon: LayoutDashboard },
+  { num: "02", to: "/ams-manager/achievements",  label: "Achievements",   icon: Trophy },
+  { num: "03", to: "/ams-manager/badges",        label: "Badges",         icon: Shield },
+  { num: "04", to: "/ams-manager/trophies",      label: "Trophies",       icon: Award },
+  { num: "05", to: "/ams-manager/xp",            label: "XP",             icon: Zap },
+  { num: "06", to: "/ams-manager/levels",        label: "Levels",         icon: ArrowUpCircle },
+  { num: "07", to: "/ams-manager/ranks",         label: "Ranks",          icon: Crown },
+  { num: "08", to: "/ams-manager/missions",      label: "Missions",       icon: Target },
+  { num: "09", to: "/ams-manager/quests",        label: "Quests",         icon: Compass },
+  { num: "10", to: "/ams-manager/challenges",    label: "Challenges",     icon: Swords },
+  { num: "11", to: "/ams-manager/rewards",       label: "Rewards",        icon: Gift },
+  { num: "12", to: "/ams-manager/claims",        label: "Claims",         icon: PackageCheck },
+  { num: "13", to: "/ams-manager/leaderboards",  label: "Leaderboards",   icon: BarChart3 },
+  { num: "14", to: "/ams-manager/analytics",     label: "Analytics",      icon: LineChart },
+  { num: "15", to: "/ams-manager/notifications", label: "Notifications",  icon: Bell },
+  { num: "16", to: "/ams-manager/audit",         label: "Audit Logs",     icon: ScrollText },
+  { num: "17", to: "/ams-manager/hall-of-fame",  label: "Hall of Fame",   icon: Star },
+  { num: "18", to: "/ams-manager/ai",            label: "AI Center",      icon: Sparkles },
+  { num: "19", to: "/ams-manager/chat",          label: "Chat",           icon: MessageSquare },
+  { num: "20", to: "/ams-manager/museum",        label: "Museums",        icon: Landmark },
+  { num: "21", to: "/ams-manager/collection",     label: "Collections",    icon: Crown },
+  { num: "22", to: "/ams-manager/settings",      label: "Settings",       icon: Settings },
 ];
 
 const VAULTS: { to: string; label: string }[] = [
-  { to: "/trophy-vault",           label: "Trophies" },
-  { to: "/award-vault",            label: "Awards" },
-  { to: "/achievement-vault",      label: "Achievements" },
-  { to: "/badge-vault",            label: "Badges" },
-  { to: "/certificate-vault",      label: "Certificates" },
-  { to: "/passport-vault",         label: "Digital Passports" },
-  { to: "/membership-vault",       label: "Membership Cards" },
-  { to: "/rank-vault",             label: "Rank Emblems" },
-  { to: "/verification-vault",     label: "Verification Shields" },
-  { to: "/reputation-vault",       label: "Reputation Medals" },
-  { to: "/trust-seal-vault",       label: "Trust Seals" },
-  { to: "/recognition-coin-vault", label: "Recognition Coins" },
-  { to: "/xp-crystal-vault",       label: "XP Crystals" },
-  { to: "/reward-chest-vault",     label: "Reward Chests" },
-  { to: "/honor-coin-vault",       label: "Honor Coins" },
-  { to: "/legacy-medal-vault",     label: "Legacy Medals" },
-  { to: "/identity-card-vault",    label: "Identity Cards" },
-  { to: "/license-card-vault",     label: "License Cards" },
-  { to: "/founder-seal-vault",     label: "Founder Seals" },
-  { to: "/hall-of-fame-vault",     label: "Hall of Fame" },
+  { to: "/ams-manager/trophy-vault",           label: "Trophies" },
+  { to: "/ams-manager/award-vault",            label: "Awards" },
+  { to: "/ams-manager/achievement-vault",      label: "Achievements" },
+  { to: "/ams-manager/badge-vault",            label: "Badges" },
+  { to: "/ams-manager/certificate-vault",      label: "Certificates" },
+  { to: "/ams-manager/passport-vault",         label: "Digital Passports" },
+  { to: "/ams-manager/membership-vault",       label: "Membership Cards" },
+  { to: "/ams-manager/rank-vault",             label: "Rank Emblems" },
+  { to: "/ams-manager/verification-vault",     label: "Verification Shields" },
+  { to: "/ams-manager/reputation-vault",       label: "Reputation Medals" },
+  { to: "/ams-manager/trust-seal-vault",       label: "Trust Seals" },
+  { to: "/ams-manager/recognition-coin-vault", label: "Recognition Coins" },
+  { to: "/ams-manager/xp-crystal-vault",       label: "XP Crystals" },
+  { to: "/ams-manager/reward-chest-vault",     label: "Reward Chests" },
+  { to: "/ams-manager/honor-coin-vault",       label: "Honor Coins" },
+  { to: "/ams-manager/legacy-medal-vault",     label: "Legacy Medals" },
+  { to: "/ams-manager/identity-card-vault",    label: "Identity Cards" },
+  { to: "/ams-manager/license-card-vault",     label: "License Cards" },
+  { to: "/ams-manager/founder-seal-vault",     label: "Founder Seals" },
+  { to: "/ams-manager/hall-of-fame-vault",     label: "Hall of Fame" },
 ];
 
 
@@ -150,7 +150,7 @@ export function LeftSidebar() {
               return (
                 <Link
                   key={s.slug}
-                  to="/museum/$showcase"
+                  to="/ams-manager/museum/$showcase"
                   params={{ showcase: s.slug }}
                   title={collapsed ? s.title : undefined}
                   className={cn(
@@ -180,7 +180,7 @@ export function LeftSidebar() {
               return (
                 <Link
                   key={t.slug}
-                  to="/collection/$type"
+                  to="/ams-manager/collection/$type"
                   params={{ type: t.slug }}
                   title={collapsed ? t.title : undefined}
                   className={cn(

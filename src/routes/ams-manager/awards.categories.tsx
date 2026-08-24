@@ -34,7 +34,7 @@ function CategoriesPage() {
         {AWARD_CATEGORIES.map((c) => (
           <Link
             key={c.value}
-            to="/awards"
+            to="/ams-manager/awards"
             className="surface-card p-4 flex items-center justify-between hover:shadow-glow-trophy transition-shadow"
           >
             <div>

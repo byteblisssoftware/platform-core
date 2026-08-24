@@ -90,7 +90,7 @@ export function AppSidebar({ collapsed, onToggleCollapsed, mobileOpen, onCloseMo
           collapsed && "justify-center px-0",
         )}
       >
-        <Link to="/" className="flex min-w-0 items-center gap-2" onClick={onCloseMobile}>
+        <Link to="/ams-manager/ams-manager" className="flex min-w-0 items-center gap-2" onClick={onCloseMobile}>
           <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-primary to-primary-glow text-primary-foreground">
             <Trophy className="h-4 w-4" />
           </span>

@@ -23,7 +23,7 @@ export function TopBar({ onOpenMenu }: { onOpenMenu?: () => void }) {
           <Menu className="h-[18px] w-[18px]" />
         </button>
 
-        <Link to="/" className="flex shrink-0 items-center gap-2 lg:hidden" aria-label="AMS Manager home">
+        <Link to="/ams-manager/ams-manager" className="flex shrink-0 items-center gap-2 lg:hidden" aria-label="AMS Manager home">
           <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-primary to-primary-glow text-primary-foreground">
             <Trophy className="h-4 w-4" />
           </span>
@@ -44,14 +44,14 @@ export function TopBar({ onOpenMenu }: { onOpenMenu?: () => void }) {
         </div>
 
         <div className="ml-auto flex items-center gap-1.5">
-          <Link to="/notifications" className={cn(ICON_BTN, "hidden sm:grid")} aria-label="Notifications">
+          <Link to="/ams-manager/notifications" className={cn(ICON_BTN, "hidden sm:grid")} aria-label="Notifications">
             <Bell className="h-[18px] w-[18px]" />
             <span className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-primary ring-2 ring-background" />
           </Link>
-          <Link to="/ai" className={cn(ICON_BTN, "hidden sm:grid")} aria-label="AI Center">
+          <Link to="/ams-manager/ai" className={cn(ICON_BTN, "hidden sm:grid")} aria-label="AI Center">
             <Sparkles className="h-[18px] w-[18px]" />
           </Link>
-          <Link to="/xp" className={cn(ICON_BTN, "hidden md:grid")} aria-label="XP">
+          <Link to="/ams-manager/xp" className={cn(ICON_BTN, "hidden md:grid")} aria-label="XP">
             <Zap className="h-[18px] w-[18px]" />
           </Link>
           <SoundControl />
@@ -72,10 +72,10 @@ export function TopBar({ onOpenMenu }: { onOpenMenu?: () => void }) {
               <DropdownMenuLabel className="text-xs text-muted-foreground">Admin</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem asChild>
-                <Link to="/identity"><User2 className="mr-2 h-4 w-4" /> Profile</Link>
+                <Link to="/ams-manager/identity"><User2 className="mr-2 h-4 w-4" /> Profile</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/settings"><Settings className="mr-2 h-4 w-4" /> Settings</Link>
+                <Link to="/ams-manager/settings"><Settings className="mr-2 h-4 w-4" /> Settings</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

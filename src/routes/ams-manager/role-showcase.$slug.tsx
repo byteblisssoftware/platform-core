@@ -62,7 +62,7 @@ function Page() {
           style={{ background: `radial-gradient(closest-side, ${t.accent}55, transparent)`, filter: "blur(24px)" }} />
 
         <div className="relative px-6 lg:px-10 pt-6 pb-16">
-          <Link to="/role-showcase" className="inline-flex items-center gap-1.5 text-xs text-white/80 hover:text-white transition">
+          <Link to="/ams-manager/role-showcase" className="inline-flex items-center gap-1.5 text-xs text-white/80 hover:text-white transition">
             <ArrowLeft className="h-3.5 w-3.5" /> All rooms
           </Link>
 

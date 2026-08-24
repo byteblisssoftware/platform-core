@@ -25,7 +25,7 @@ export function AwardCard({
   const meta = RARITY_META[award.rarity];
   return (
     <Link
-      to="/awards/$id"
+      to="/ams-manager/awards/$id"
       params={{ id: award.id }}
       className={cn(
         "group surface-card motion-card relative flex flex-col gap-3 p-4",

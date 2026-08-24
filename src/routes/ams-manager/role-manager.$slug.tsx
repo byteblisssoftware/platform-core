@@ -35,7 +35,7 @@ function NotFound() {
   return (
     <div className="p-12 text-center">
       <h1 className="text-2xl font-bold">Role not found</h1>
-      <Button asChild variant="outline" className="mt-4"><Link to="/role-manager">Back to Role Manager</Link></Button>
+      <Button asChild variant="outline" className="mt-4"><Link to="/ams-manager/role-manager">Back to Role Manager</Link></Button>
     </div>
   );
 }
@@ -72,7 +72,7 @@ function Page() {
   return (
     <div className="space-y-6 max-w-[1600px] mx-auto">
       <Button asChild variant="ghost" size="sm" className="gap-1.5 -ml-2">
-        <Link to="/role-manager"><ChevronLeft className="h-4 w-4" /> Back to Role Manager</Link>
+        <Link to="/ams-manager/role-manager"><ChevronLeft className="h-4 w-4" /> Back to Role Manager</Link>
       </Button>
 
       {/* Hero */}

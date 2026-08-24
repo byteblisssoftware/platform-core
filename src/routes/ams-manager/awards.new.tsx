@@ -22,7 +22,7 @@ function NewAwardPage() {
   return (
     <div className="space-y-6 max-w-[1600px] mx-auto">
       <div>
-        <Button asChild variant="ghost" size="sm" className="gap-1.5 mb-2 -ml-2"><Link to="/awards"><ChevronLeft className="h-4 w-4" /> Back to awards</Link></Button>
+        <Button asChild variant="ghost" size="sm" className="gap-1.5 mb-2 -ml-2"><Link to="/ams-manager/awards"><ChevronLeft className="h-4 w-4" /> Back to awards</Link></Button>
         <PageHeader kicker="Create" title="New award" description="Define the basics, attach media, set unlock rules and rewards, then publish." />
       </div>
       <AwardForm mode="create" />

@@ -203,7 +203,7 @@ export function WorkspaceBar() {
           className="flex min-w-0 items-center gap-1.5 text-[11px] uppercase tracking-[0.18em]"
         >
           <Link
-            to="/"
+            to="/ams-manager/ams-manager"
             activeOptions={{ exact: true }}
             className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-trophy data-[status=active]:text-trophy"
           >
