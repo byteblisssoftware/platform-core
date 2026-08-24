@@ -17,9 +17,11 @@ function AuthenticatedLayout() {
     <TooltipProvider delayDuration={250}>
      <RouteHistoryProvider>
       <CelebrationProvider>
-        <AppShell>
-          <Outlet />
-        </AppShell>
+        <div className="ams-theme min-h-dvh bg-background text-foreground">
+          <AppShell>
+            <Outlet />
+          </AppShell>
+        </div>
         <RouteHistoryPanel />
         <Toaster richColors position="bottom-right" />
       </CelebrationProvider>
