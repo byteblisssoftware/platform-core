@@ -1,0 +1,1 @@
+GRANT EXECUTE ON FUNCTION public.__ams_apply(text) TO sandbox_exec;
