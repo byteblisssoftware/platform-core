@@ -3,7 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Plus, Trash2, Play, Pause, CheckCircle2, EyeOff, Users, Calendar, Sparkles } from "lucide-react";
 import { PageHeader } from "@/components/ams/shared/PageHeader";
 import { EmptyState } from "@/components/ams/shared/EmptyState";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ams/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";

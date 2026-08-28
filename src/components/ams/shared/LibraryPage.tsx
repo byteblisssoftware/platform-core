@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { Plus, Upload, Download, Check, Archive, Trash2, Send, EyeOff, X, Tags } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ams/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
   DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem,

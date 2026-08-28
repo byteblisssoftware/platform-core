@@ -5,7 +5,7 @@ import {
   Plus, MoreVertical, Trash2, Archive, RotateCcw, Send, Ban, Check, X,
   Copy, Power, Eye, Pencil, LayoutGrid, List as ListIcon,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ams/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
   DropdownMenu, DropdownMenuContent, DropdownMenuItem,

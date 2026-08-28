@@ -4,7 +4,7 @@ import {
   ChevronLeft, Pencil, Copy, Archive, Trash2, Send, Ban,
   Check, X, RotateCcw, Power,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ams/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { PageHeader } from "@/components/ams/shared/PageHeader";
 import { RarityBadge } from "@/components/ams/shared/RarityBadge";

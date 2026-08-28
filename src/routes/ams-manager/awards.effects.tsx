@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Sparkles, Coins, Crown, Trophy, Award as AwardIcon, Zap, Gift, Star } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ams/ui/button";
 import { PageHeader } from "@/components/ams/shared/PageHeader";
 import { useCelebration } from "@/components/ams/effects/Celebration";
 import {
