@@ -4644,7 +4644,6 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      __ams_apply: { Args: { sql: string }; Returns: undefined }
       can_post_in_chat: {
         Args: { _conv: string; _user: string }
         Returns: boolean
