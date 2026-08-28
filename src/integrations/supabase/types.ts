@@ -10,7 +10,7 @@ export type Database = {
   // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
-    PostgrestVersion: "14.17"
+    PostgrestVersion: "14.5"
   }
   public: {
     Tables: {
@@ -4645,6 +4645,10 @@ export type Database = {
     }
     Functions: {
       __ams_apply: { Args: { sql: string }; Returns: undefined }
+      can_post_in_chat: {
+        Args: { _conv: string; _user: string }
+        Returns: boolean
+      }
       has_role: {
         Args: {
           _role: Database["public"]["Enums"]["app_role"]
@@ -4652,6 +4656,7 @@ export type Database = {
         }
         Returns: boolean
       }
+      is_admin: { Args: { _user_id: string }; Returns: boolean }
       is_chat_participant: {
         Args: { _conv: string; _user: string }
         Returns: boolean
