@@ -3,7 +3,7 @@ import {
   ChevronLeft, Sparkles, Trophy, Award, ShieldCheck, BookOpen, Compass,
   Star, Route as RouteIcon, Layers, Quote, MessageCircle,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ams/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { getRole, type RoleDNA } from "@/lib/ams/roles";
 

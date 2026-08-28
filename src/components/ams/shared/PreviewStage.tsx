@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Volume2, Sparkles, Play } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ams/ui/button";
 import { useCelebration } from "@/components/ams/effects/Celebration";
 import { ProceduralEmblem } from "./ProceduralEmblem";
 import { RARITY_META, type Award } from "@/lib/ams/types";

@@ -220,10 +220,15 @@ function Index() {
                 void navigate({ to: "/seo-manager" });
                 return;
               }
+              if (roleId === "ams_manager") {
+                void navigate({ to: "/ams-manager" });
+                return;
+              }
               if (roleId === "home") {
                 void navigate({ to: "/" });
                 return;
               }
+
 
               // ===== EVERY REMAINING MANAGER → generic working console =====
               const GENERIC_MANAGER_ROUTES: Partial<Record<RoleId, string>> = {

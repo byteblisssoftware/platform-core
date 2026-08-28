@@ -3,7 +3,7 @@ import {
   Search, Plus, Download, Upload, Copy, Archive, Trash2, Check, Filter,
   MoreHorizontal, TrendingUp, TrendingDown, ArrowUpRight,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ams/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import {

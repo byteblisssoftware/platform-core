@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ChevronLeft } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ams/ui/button";
 import { PageHeader } from "@/components/ams/shared/PageHeader";
 import { AwardForm } from "@/components/ams/AwardForm";
 

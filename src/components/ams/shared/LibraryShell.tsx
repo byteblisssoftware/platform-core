@@ -1,6 +1,6 @@
 import { type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ams/ui/button";
 import { Plus } from "lucide-react";
 import { PageHeader } from "@/components/ams/shared/PageHeader";
 import { EmptyState } from "@/components/ams/shared/EmptyState";

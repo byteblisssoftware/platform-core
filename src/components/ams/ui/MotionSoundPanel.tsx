@@ -2,7 +2,7 @@ import { Volume2, Waves } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
 import { Slider } from "@/components/ui/slider";
 import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ams/ui/button";
 import { useUiSound } from "@/hooks/use-ui-sound";
 import type { UiSound } from "@/lib/ams/ui-sound";
 
