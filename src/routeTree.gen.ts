@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AmsManagerRouteRouteImport } from './routes/ams-manager/route'
+import { Route as ChatRouteImport } from './routes/chat'
 import { Route as ControlPanelRouteImport } from './routes/control-panel'
 import { Route as CreatorManagerRouteImport } from './routes/creator-manager'
 import { Route as FranchiseManagerRouteImport } from './routes/franchise-manager'
@@ -72,6 +73,10 @@ import { Route as AmsManagerXpCrystalVaultRouteImport } from './routes/ams-manag
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as ApplyIndexRouteImport } from './routes/apply.index'
 import { Route as ApplyRoleRouteImport } from './routes/apply.$role'
+import { Route as ChatIndexRouteImport } from './routes/chat.index'
+import { Route as ChatAuthRouteImport } from './routes/chat.auth'
+import { Route as ChatConsoleRouteImport } from './routes/chat.console'
+import { Route as ChatDashboardRouteImport } from './routes/chat.dashboard'
 import { Route as DashboardRoleRouteImport } from './routes/dashboard.$role'
 import { Route as ManagerSlugRouteImport } from './routes/manager.$slug'
 import { Route as VerifyCodeRouteImport } from './routes/verify.$code'
@@ -111,6 +116,11 @@ const IndexRoute = IndexRouteImport.update({
 const AmsManagerRouteRoute = AmsManagerRouteRouteImport.update({
   id: '/ams-manager',
   path: '/ams-manager',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChatRoute = ChatRouteImport.update({
+  id: '/chat',
+  path: '/chat',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ControlPanelRoute = ControlPanelRouteImport.update({
@@ -436,6 +446,26 @@ const ApplyRoleRoute = ApplyRoleRouteImport.update({
   path: '/apply/$role',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ChatIndexRoute = ChatIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => ChatRoute,
+} as any)
+const ChatAuthRoute = ChatAuthRouteImport.update({
+  id: '/auth',
+  path: '/auth',
+  getParentRoute: () => ChatRoute,
+} as any)
+const ChatConsoleRoute = ChatConsoleRouteImport.update({
+  id: '/console',
+  path: '/console',
+  getParentRoute: () => ChatRoute,
+} as any)
+const ChatDashboardRoute = ChatDashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => ChatRoute,
+} as any)
 const DashboardRoleRoute = DashboardRoleRouteImport.update({
   id: '/dashboard/$role',
   path: '/dashboard/$role',
@@ -606,6 +636,7 @@ const AmsManagerAwardsRulesXpRoute = AmsManagerAwardsRulesXpRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/ams-manager': typeof AmsManagerRouteRouteWithChildren
+  '/chat': typeof ChatRouteWithChildren
   '/control-panel': typeof ControlPanelRoute
   '/creator-manager': typeof CreatorManagerRoute
   '/franchise-manager': typeof FranchiseManagerRoute
@@ -665,11 +696,15 @@ export interface FileRoutesByFullPath {
   '/ams-manager/xp-crystal-vault': typeof AmsManagerXpCrystalVaultRoute
   '/api/chat': typeof ApiChatRoute
   '/apply/$role': typeof ApplyRoleRoute
+  '/chat/auth': typeof ChatAuthRoute
+  '/chat/console': typeof ChatConsoleRoute
+  '/chat/dashboard': typeof ChatDashboardRoute
   '/dashboard/$role': typeof DashboardRoleRoute
   '/manager/$slug': typeof ManagerSlugRoute
   '/verify/$code': typeof VerifyCodeRoute
   '/ams-manager/': typeof AmsManagerIndexRoute
   '/apply/': typeof ApplyIndexRoute
+  '/chat/': typeof ChatIndexRoute
   '/ams-manager/ams/$id': typeof AmsManagerAmsIdRoute
   '/ams-manager/ams/new': typeof AmsManagerAmsNewRoute
   '/ams-manager/awards/$id': typeof AmsManagerAwardsIdRouteWithChildren
@@ -758,11 +793,15 @@ export interface FileRoutesByTo {
   '/ams-manager/xp-crystal-vault': typeof AmsManagerXpCrystalVaultRoute
   '/api/chat': typeof ApiChatRoute
   '/apply/$role': typeof ApplyRoleRoute
+  '/chat/auth': typeof ChatAuthRoute
+  '/chat/console': typeof ChatConsoleRoute
+  '/chat/dashboard': typeof ChatDashboardRoute
   '/dashboard/$role': typeof DashboardRoleRoute
   '/manager/$slug': typeof ManagerSlugRoute
   '/verify/$code': typeof VerifyCodeRoute
   '/ams-manager': typeof AmsManagerIndexRoute
   '/apply': typeof ApplyIndexRoute
+  '/chat': typeof ChatIndexRoute
   '/ams-manager/ams/$id': typeof AmsManagerAmsIdRoute
   '/ams-manager/ams/new': typeof AmsManagerAmsNewRoute
   '/ams-manager/awards/$id': typeof AmsManagerAwardsIdRouteWithChildren
@@ -795,6 +834,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/ams-manager': typeof AmsManagerRouteRouteWithChildren
+  '/chat': typeof ChatRouteWithChildren
   '/control-panel': typeof ControlPanelRoute
   '/creator-manager': typeof CreatorManagerRoute
   '/franchise-manager': typeof FranchiseManagerRoute
@@ -854,11 +894,15 @@ export interface FileRoutesById {
   '/ams-manager/xp-crystal-vault': typeof AmsManagerXpCrystalVaultRoute
   '/api/chat': typeof ApiChatRoute
   '/apply/$role': typeof ApplyRoleRoute
+  '/chat/auth': typeof ChatAuthRoute
+  '/chat/console': typeof ChatConsoleRoute
+  '/chat/dashboard': typeof ChatDashboardRoute
   '/dashboard/$role': typeof DashboardRoleRoute
   '/manager/$slug': typeof ManagerSlugRoute
   '/verify/$code': typeof VerifyCodeRoute
   '/ams-manager/': typeof AmsManagerIndexRoute
   '/apply/': typeof ApplyIndexRoute
+  '/chat/': typeof ChatIndexRoute
   '/ams-manager/ams/$id': typeof AmsManagerAmsIdRoute
   '/ams-manager/ams/new': typeof AmsManagerAmsNewRoute
   '/ams-manager/awards/$id': typeof AmsManagerAwardsIdRouteWithChildren
@@ -892,6 +936,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/ams-manager'
+    | '/chat'
     | '/control-panel'
     | '/creator-manager'
     | '/franchise-manager'
@@ -951,11 +996,15 @@ export interface FileRouteTypes {
     | '/ams-manager/xp-crystal-vault'
     | '/api/chat'
     | '/apply/$role'
+    | '/chat/auth'
+    | '/chat/console'
+    | '/chat/dashboard'
     | '/dashboard/$role'
     | '/manager/$slug'
     | '/verify/$code'
     | '/ams-manager/'
     | '/apply/'
+    | '/chat/'
     | '/ams-manager/ams/$id'
     | '/ams-manager/ams/new'
     | '/ams-manager/awards/$id'
@@ -1044,11 +1093,15 @@ export interface FileRouteTypes {
     | '/ams-manager/xp-crystal-vault'
     | '/api/chat'
     | '/apply/$role'
+    | '/chat/auth'
+    | '/chat/console'
+    | '/chat/dashboard'
     | '/dashboard/$role'
     | '/manager/$slug'
     | '/verify/$code'
     | '/ams-manager'
     | '/apply'
+    | '/chat'
     | '/ams-manager/ams/$id'
     | '/ams-manager/ams/new'
     | '/ams-manager/awards/$id'
@@ -1080,6 +1133,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/ams-manager'
+    | '/chat'
     | '/control-panel'
     | '/creator-manager'
     | '/franchise-manager'
@@ -1139,11 +1193,15 @@ export interface FileRouteTypes {
     | '/ams-manager/xp-crystal-vault'
     | '/api/chat'
     | '/apply/$role'
+    | '/chat/auth'
+    | '/chat/console'
+    | '/chat/dashboard'
     | '/dashboard/$role'
     | '/manager/$slug'
     | '/verify/$code'
     | '/ams-manager/'
     | '/apply/'
+    | '/chat/'
     | '/ams-manager/ams/$id'
     | '/ams-manager/ams/new'
     | '/ams-manager/awards/$id'
@@ -1176,6 +1234,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AmsManagerRouteRoute: typeof AmsManagerRouteRouteWithChildren
+  ChatRoute: typeof ChatRouteWithChildren
   ControlPanelRoute: typeof ControlPanelRoute
   CreatorManagerRoute: typeof CreatorManagerRoute
   FranchiseManagerRoute: typeof FranchiseManagerRoute
@@ -1205,6 +1264,13 @@ declare module '@tanstack/react-router' {
       path: '/ams-manager'
       fullPath: '/ams-manager'
       preLoaderRoute: typeof AmsManagerRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/chat': {
+      id: '/chat'
+      path: '/chat'
+      fullPath: '/chat'
+      preLoaderRoute: typeof ChatRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/control-panel': {
@@ -1634,6 +1700,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApplyRoleRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/chat/': {
+      id: '/chat/'
+      path: '/'
+      fullPath: '/chat/'
+      preLoaderRoute: typeof ChatIndexRouteImport
+      parentRoute: typeof ChatRoute
+    }
+    '/chat/auth': {
+      id: '/chat/auth'
+      path: '/auth'
+      fullPath: '/chat/auth'
+      preLoaderRoute: typeof ChatAuthRouteImport
+      parentRoute: typeof ChatRoute
+    }
+    '/chat/console': {
+      id: '/chat/console'
+      path: '/console'
+      fullPath: '/chat/console'
+      preLoaderRoute: typeof ChatConsoleRouteImport
+      parentRoute: typeof ChatRoute
+    }
+    '/chat/dashboard': {
+      id: '/chat/dashboard'
+      path: '/dashboard'
+      fullPath: '/chat/dashboard'
+      preLoaderRoute: typeof ChatDashboardRouteImport
+      parentRoute: typeof ChatRoute
+    }
     '/dashboard/$role': {
       id: '/dashboard/$role'
       path: '/dashboard/$role'
@@ -2035,9 +2129,26 @@ const AmsManagerRouteRouteWithChildren = AmsManagerRouteRoute._addFileChildren(
   AmsManagerRouteRouteChildren,
 )
 
+interface ChatRouteChildren {
+  ChatAuthRoute: typeof ChatAuthRoute
+  ChatConsoleRoute: typeof ChatConsoleRoute
+  ChatDashboardRoute: typeof ChatDashboardRoute
+  ChatIndexRoute: typeof ChatIndexRoute
+}
+
+const ChatRouteChildren: ChatRouteChildren = {
+  ChatAuthRoute: ChatAuthRoute,
+  ChatConsoleRoute: ChatConsoleRoute,
+  ChatDashboardRoute: ChatDashboardRoute,
+  ChatIndexRoute: ChatIndexRoute,
+}
+
+const ChatRouteWithChildren = ChatRoute._addFileChildren(ChatRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AmsManagerRouteRoute: AmsManagerRouteRouteWithChildren,
+  ChatRoute: ChatRouteWithChildren,
   ControlPanelRoute: ControlPanelRoute,
   CreatorManagerRoute: CreatorManagerRoute,
   FranchiseManagerRoute: FranchiseManagerRoute,
