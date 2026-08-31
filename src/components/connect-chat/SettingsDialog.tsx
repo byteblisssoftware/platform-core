@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
-import { languages, type LangCode } from "@/lib/chat-data";
+import { languages, type LangCode } from "@/lib/connect-chat/chat-data";
 
 export function SettingsDialog({
   open,

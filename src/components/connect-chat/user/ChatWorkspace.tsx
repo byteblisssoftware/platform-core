@@ -18,7 +18,7 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { TooltipProvider, Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { supabase } from "@/integrations/supabase/client";
-import { useMyPermissions, useMyProfile, useSupabaseSession } from "@/hooks/use-session";
+import { useMyPermissions, useMyProfile, useSupabaseSession } from "@/hooks/chat/use-session";
 import {
   useConversationRealtime,
   useConversations,
@@ -26,8 +26,8 @@ import {
   useMessages,
   useReadReceipts,
   useSendMessage,
-} from "@/hooks/use-chat";
-import { usePreferences, playCue } from "@/hooks/use-preferences";
+} from "@/hooks/chat/use-chat";
+import { usePreferences, playCue } from "@/hooks/chat/use-preferences";
 import { fetchProfiles, setFavorite, setMuted, updatePresence } from "@/services/chat/chat-service";
 import type { ChatMessage, Profile } from "@/services/chat/types";
 import { ConversationSidebar } from "./ConversationSidebar";

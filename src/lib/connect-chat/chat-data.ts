@@ -1,9 +1,9 @@
-import logoAsset from "@/assets/software-vala-logo.jpg";
-import client1 from "@/assets/client-1.jpg";
-import client2 from "@/assets/client-2.jpg";
-import client3 from "@/assets/client-3.jpg";
-import client4 from "@/assets/client-4.jpg";
-import client5 from "@/assets/client-5.jpg";
+import logoAsset from "@/assets/chat/software-vala-logo.jpg";
+import client1 from "@/assets/chat/client-1.jpg";
+import client2 from "@/assets/chat/client-2.jpg";
+import client3 from "@/assets/chat/client-3.jpg";
+import client4 from "@/assets/chat/client-4.jpg";
+import client5 from "@/assets/chat/client-5.jpg";
 
 export const valaLogo = logoAsset;
 

@@ -3,8 +3,8 @@ import { Plus, Search, Sparkles, Star, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import type { Conversation } from "@/lib/chat-data";
-import logoAsset from "@/assets/software-vala-logo.jpg";
+import type { Conversation } from "@/lib/connect-chat/chat-data";
+import logoAsset from "@/assets/chat/software-vala-logo.jpg";
 
 const filters = ["All Chats", "Unread", "Favorites"] as const;
 

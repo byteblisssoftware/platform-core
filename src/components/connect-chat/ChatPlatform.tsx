@@ -11,11 +11,11 @@ import {
   valaLogo,
   type Conversation,
   type LangCode,
-} from "@/lib/chat-data";
-import { translateText } from "@/lib/translate";
+} from "@/lib/connect-chat/chat-data";
+import { translateText } from "@/lib/connect-chat/translate";
 import { ProfileEditDialog, type ProfileDraft } from "./ProfileEditDialog";
 import { SettingsDialog } from "./SettingsDialog";
-import avatarAsset from "@/assets/avatar-amit.jpg";
+import avatarAsset from "@/assets/chat/avatar-amit.jpg";
 
 export function ChatPlatform() {
   const [items, setItems] = useState<Conversation[]>(() =>

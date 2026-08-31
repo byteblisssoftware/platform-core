@@ -35,8 +35,8 @@ import {
   type Conversation,
   type LangCode,
   type Message,
-} from "@/lib/chat-data";
-import { translateText } from "@/lib/translate";
+} from "@/lib/connect-chat/chat-data";
+import { translateText } from "@/lib/connect-chat/translate";
 
 function Ticks({ read }: { read?: boolean | undefined }) {
   return read ? (

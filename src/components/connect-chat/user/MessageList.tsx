@@ -5,9 +5,9 @@ import {
 } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import { translateMessage } from "@/lib/translate.functions";
+import { translateMessage } from "@/lib/connect-chat/translate.functions";
 import type { ChatMessage, Profile } from "@/services/chat/types";
-import type { ConnectionState, PendingMessage } from "@/hooks/use-chat";
+import type { ConnectionState, PendingMessage } from "@/hooks/chat/use-chat";
 import { UserAvatar, AttachmentCard } from "./media";
 import { cn } from "@/lib/utils";
 
