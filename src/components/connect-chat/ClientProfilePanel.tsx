@@ -87,7 +87,7 @@ export function ClientProfilePanel({
         </button>
       </div>
 
-      <div className="glass flex flex-col items-center gap-2 rounded-3xl p-4 text-center shadow-float">
+      <div className="cglass flex flex-col items-center gap-2 rounded-3xl p-4 text-center shadow-float">
         <div className="relative">
           <img
             src={conversation.avatar}
@@ -166,7 +166,7 @@ export function ClientProfilePanel({
                   onClick={a.run}
                   className={cn(
                     "press grid size-10 place-items-center rounded-2xl border border-border/60 shadow-3d",
-                    a.on ? "bg-gold-gradient text-gold-foreground" : "bg-card text-muted-foreground hover:text-brand",
+                    a.on ? "bg-cgold-gradient text-gold-foreground" : "bg-card text-muted-foreground hover:text-brand",
                   )}
                 >
                   <a.icon className="size-4" />

@@ -117,7 +117,7 @@ function Bubble({
             "relative rounded-3xl px-4 py-3 text-sm leading-relaxed shadow-3d",
             mine
               ? "bg-brand-gradient text-brand-foreground rounded-br-lg"
-              : "glass rounded-bl-lg text-card-foreground",
+              : "cglass rounded-bl-lg text-card-foreground",
           )}
         >
           {msg.kind === "file" && msg.file ? (
@@ -454,7 +454,7 @@ export function ChatWindow({
 
       <div className="no-scrollbar relative z-10 flex-1 space-y-6 overflow-y-auto px-5 py-6 md:px-8">
         <div className="flex justify-center">
-          <span className="glass rounded-full px-4 py-1 text-xs font-semibold text-muted-foreground shadow-3d">
+          <span className="cglass rounded-full px-4 py-1 text-xs font-semibold text-muted-foreground shadow-3d">
             Today
           </span>
         </div>
@@ -485,7 +485,7 @@ export function ChatWindow({
               height={40}
               className="size-10 rounded-2xl bg-card object-cover shadow-3d ring-1 ring-border/60"
             />
-            <div className="glass rounded-3xl rounded-bl-lg px-5 py-4 shadow-3d">
+            <div className="cglass rounded-3xl rounded-bl-lg px-5 py-4 shadow-3d">
               <TypingDots />
             </div>
           </div>
@@ -558,7 +558,7 @@ export function ChatWindow({
             className={cn(
               "press shrink-0 rounded-full px-2.5 py-0.5 text-[11px] font-semibold transition-colors",
               sendTranslated
-                ? "bg-gold-gradient text-gold-foreground shadow-glow"
+                ? "bg-cgold-gradient text-gold-foreground shadow-glow"
                 : "bg-muted text-muted-foreground",
             )}
           >
@@ -579,7 +579,7 @@ export function ChatWindow({
         </div>
 
         {/* Slim composer — only the chat text lives inside */}
-        <div className="glass flex items-center gap-1.5 rounded-full px-2 py-1.5 shadow-float">
+        <div className="cglass flex items-center gap-1.5 rounded-full px-2 py-1.5 shadow-float">
           <input
             ref={fileRef}
             type="file"
@@ -688,7 +688,7 @@ export function ChatWindow({
             type="button"
             aria-label="Send message"
             onClick={submit}
-            className="press grid size-10 shrink-0 place-items-center rounded-full bg-gold-gradient text-gold-foreground shadow-glow"
+            className="press grid size-10 shrink-0 place-items-center rounded-full bg-cgold-gradient text-gold-foreground shadow-glow"
           >
             <SendHorizontal className="size-4" />
           </button>

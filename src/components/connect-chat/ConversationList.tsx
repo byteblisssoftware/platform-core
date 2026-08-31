@@ -119,7 +119,7 @@ export function ConversationList({
               className={cn(
                 "group relative flex cursor-pointer items-center gap-3 rounded-2xl p-3 transition-all",
                 isActive
-                  ? "glass shadow-float ring-1 ring-brand/40"
+                  ? "cglass shadow-float ring-1 ring-brand/40"
                   : "hover:bg-accent/60",
               )}
               onClick={() => onSelect(c.id)}

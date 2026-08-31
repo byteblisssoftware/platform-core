@@ -159,7 +159,7 @@ export function ChatPlatform() {
   return (
     <TooltipProvider delayDuration={200}>
       <main className="flex h-screen w-full overflow-hidden bg-background p-0 lg:p-4">
-        <div className="glass flex h-full w-full overflow-hidden rounded-none shadow-float lg:rounded-[32px]">
+        <div className="cglass flex h-full w-full overflow-hidden rounded-none shadow-float lg:rounded-[32px]">
           <IconRail
             avatar={me.avatar}
             dark={dark}
