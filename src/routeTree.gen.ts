@@ -72,6 +72,7 @@ import { Route as AmsManagerXpCrystalVaultRouteImport } from './routes/ams-manag
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as ApplyIndexRouteImport } from './routes/apply.index'
 import { Route as ApplyRoleRouteImport } from './routes/apply.$role'
+import { Route as ChatAuthRouteImport } from './routes/chat.auth'
 import { Route as DashboardRoleRouteImport } from './routes/dashboard.$role'
 import { Route as ManagerSlugRouteImport } from './routes/manager.$slug'
 import { Route as VerifyCodeRouteImport } from './routes/verify.$code'
@@ -436,6 +437,11 @@ const ApplyRoleRoute = ApplyRoleRouteImport.update({
   path: '/apply/$role',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ChatAuthRoute = ChatAuthRouteImport.update({
+  id: '/chat/auth',
+  path: '/chat/auth',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DashboardRoleRoute = DashboardRoleRouteImport.update({
   id: '/dashboard/$role',
   path: '/dashboard/$role',
@@ -665,6 +671,7 @@ export interface FileRoutesByFullPath {
   '/ams-manager/xp-crystal-vault': typeof AmsManagerXpCrystalVaultRoute
   '/api/chat': typeof ApiChatRoute
   '/apply/$role': typeof ApplyRoleRoute
+  '/chat/auth': typeof ChatAuthRoute
   '/dashboard/$role': typeof DashboardRoleRoute
   '/manager/$slug': typeof ManagerSlugRoute
   '/verify/$code': typeof VerifyCodeRoute
@@ -758,6 +765,7 @@ export interface FileRoutesByTo {
   '/ams-manager/xp-crystal-vault': typeof AmsManagerXpCrystalVaultRoute
   '/api/chat': typeof ApiChatRoute
   '/apply/$role': typeof ApplyRoleRoute
+  '/chat/auth': typeof ChatAuthRoute
   '/dashboard/$role': typeof DashboardRoleRoute
   '/manager/$slug': typeof ManagerSlugRoute
   '/verify/$code': typeof VerifyCodeRoute
@@ -854,6 +862,7 @@ export interface FileRoutesById {
   '/ams-manager/xp-crystal-vault': typeof AmsManagerXpCrystalVaultRoute
   '/api/chat': typeof ApiChatRoute
   '/apply/$role': typeof ApplyRoleRoute
+  '/chat/auth': typeof ChatAuthRoute
   '/dashboard/$role': typeof DashboardRoleRoute
   '/manager/$slug': typeof ManagerSlugRoute
   '/verify/$code': typeof VerifyCodeRoute
@@ -951,6 +960,7 @@ export interface FileRouteTypes {
     | '/ams-manager/xp-crystal-vault'
     | '/api/chat'
     | '/apply/$role'
+    | '/chat/auth'
     | '/dashboard/$role'
     | '/manager/$slug'
     | '/verify/$code'
@@ -1044,6 +1054,7 @@ export interface FileRouteTypes {
     | '/ams-manager/xp-crystal-vault'
     | '/api/chat'
     | '/apply/$role'
+    | '/chat/auth'
     | '/dashboard/$role'
     | '/manager/$slug'
     | '/verify/$code'
@@ -1139,6 +1150,7 @@ export interface FileRouteTypes {
     | '/ams-manager/xp-crystal-vault'
     | '/api/chat'
     | '/apply/$role'
+    | '/chat/auth'
     | '/dashboard/$role'
     | '/manager/$slug'
     | '/verify/$code'
@@ -1185,6 +1197,7 @@ export interface RootRouteChildren {
   SeoManagerRoute: typeof SeoManagerRoute
   ApiChatRoute: typeof ApiChatRoute
   ApplyRoleRoute: typeof ApplyRoleRoute
+  ChatAuthRoute: typeof ChatAuthRoute
   DashboardRoleRoute: typeof DashboardRoleRoute
   ManagerSlugRoute: typeof ManagerSlugRoute
   VerifyCodeRoute: typeof VerifyCodeRoute
@@ -1634,6 +1647,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApplyRoleRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/chat/auth': {
+      id: '/chat/auth'
+      path: '/chat/auth'
+      fullPath: '/chat/auth'
+      preLoaderRoute: typeof ChatAuthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/dashboard/$role': {
       id: '/dashboard/$role'
       path: '/dashboard/$role'
@@ -2047,6 +2067,7 @@ const rootRouteChildren: RootRouteChildren = {
   SeoManagerRoute: SeoManagerRoute,
   ApiChatRoute: ApiChatRoute,
   ApplyRoleRoute: ApplyRoleRoute,
+  ChatAuthRoute: ChatAuthRoute,
   DashboardRoleRoute: DashboardRoleRoute,
   ManagerSlugRoute: ManagerSlugRoute,
   VerifyCodeRoute: VerifyCodeRoute,
