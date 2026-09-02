@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { Home, Compass, Layers, FolderOpen, Settings, LifeBuoy, LogOut, Sparkles, Calculator } from "lucide-react";
+import { Home, Compass, Layers, FolderOpen, Settings, LifeBuoy, LogOut, Sparkles, Calculator, MessagesSquare } from "lucide-react";
 import { useNavigate } from "@tanstack/react-router";
 import logoAsset from "@/assets/dashboardLogoAsset";
 import type { RoleConfig } from "@/lib/roles";
@@ -54,6 +54,7 @@ function SidebarBase({ role, activeModule, onSelectModule }: Props) {
             <NavItem icon={Calculator} label="Pricing Engine" active={activeModule === "pricing"} onClick={() => onSelectModule("pricing")} accent />
           )}
           <NavItem icon={Sparkles} label="AI Chat" active={activeModule === "ai-chat"} onClick={() => onSelectModule("ai-chat")} accent />
+          <NavItem icon={MessagesSquare} label="Team Chat" onClick={() => navigate({ to: "/chat" })} />
           <NavItem icon={Compass} label="Explore" onClick={() => navigate({ to: "/" })} />
           <NavItem icon={Layers} label="Marketplace" onClick={() => navigate({ to: "/" })} />
           <NavItem
